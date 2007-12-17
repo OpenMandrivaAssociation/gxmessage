@@ -10,7 +10,6 @@ License:	GPL
 URL:		http://homepages.ihug.co.nz/~trmusson
 Group:		Development/GNOME and GTK+
 Source:		%{URL}/stuff/%{name}-%{version}.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	gtk+2.0
 
 %description
