@@ -1,15 +1,15 @@
 %define name gxmessage
-%define version 2.6.0
+%define version 2.6.2
 %define release %mkrel 1
 
 Summary:	An xmessage substitute for gtk-2.0
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-License:	GPL
+License:	GPLv2+
 URL:		http://homepages.ihug.co.nz/~trmusson
 Group:		Development/GNOME and GTK+
-Source:		%{URL}/stuff/%{name}-%{version}.tar.bz2
+Source:		http://homepages.ihug.co.nz/~trmusson/stuff/%name-%version.tar.gz
 BuildRequires:	gtk+2-devel
 
 %description
@@ -24,26 +24,21 @@ on the user's response. gxmessage is a gtk-2.0 based clone of xmessage.
 
 
 %build
-%configure --bindir=/usr/X11R6/bin
+%configure2_5x
 %make
-
 
 %install
 %__rm -rf %buildroot
-%makeinstall bindir=%buildroot/usr/X11R6/bin
-
+%makeinstall_std
 %find_lang %name
 
 %clean
 %__rm -rf %buildroot
 
-
 %files -f %name.lang
 %defattr (0755,root,root,0755)
-/usr/X11R6/bin/%name
+%_bindir/%name
 %defattr (0644,root,root,0755)
 %doc AUTHORS ChangeLog README
 %_mandir/man1/%name.1*
 %_datadir/pixmaps/%name.png
-
-
