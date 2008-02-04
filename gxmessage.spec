@@ -13,7 +13,6 @@ Source:		http://homepages.ihug.co.nz/~trmusson/stuff/%name-%version.tar.gz
 BuildRequires:	gtk+2-devel
 
 %description
-
 To quote from the xmessage manual page, xmessage is a program to
 "display a message or query in a window." It returns an exit code based
 on the user's response. gxmessage is a gtk-2.0 based clone of xmessage.
