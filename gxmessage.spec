@@ -12,6 +12,7 @@ Group:		Development/GNOME and GTK+
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://homepages.ihug.co.nz/~trmusson/stuff/%name-%version.tar.gz
 BuildRequires:	gtk+2-devel
+BuildRequires:	intltool
 
 %description
 To quote from the xmessage manual page, xmessage is a program to
