@@ -1,6 +1,6 @@
 %define name gxmessage
 %define version 2.12.4
-%define release %mkrel 2
+%define release 3
 
 Summary:	An xmessage substitute for gtk-2.0
 Name:		%{name}
