@@ -7,7 +7,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 License:	GPLv3+
-URL:		http://homepages.ihug.co.nz/~trmusson
+URL:		https://homepages.ihug.co.nz/~trmusson
 Group:		Development/GNOME and GTK+
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://homepages.ihug.co.nz/~trmusson/stuff/%name-%version.tar.gz
