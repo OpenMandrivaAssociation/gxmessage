@@ -11,6 +11,11 @@ URL:		https://homepages.ihug.co.nz/~trmusson
 Group:		Development/GNOME and GTK+
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		http://homepages.ihug.co.nz/~trmusson/stuff/%name-%version.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gtk+2-devel
 BuildRequires:	intltool
 
